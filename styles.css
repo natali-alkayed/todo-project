@@ -1,0 +1,93 @@
+h1
+{
+background-color: rgb(185, 186, 187);
+font-size: 30px;
+color: rgb(0, 3, 3);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: justify;
+}
+
+table,td,th
+{
+background-color:white;
+border: 2px solid;
+width: 100%;
+border-collapse: collapse;
+margin-left: 15%;
+margin-right: 15%;
+text-align: center;
+padding: 15px;
+width: 70%;
+
+}
+
+h2
+{
+    font-size: 50px;
+    color: rgb(0, 3, 3);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align: center;   
+}
+
+h3
+{
+    font-size: 50px;
+    color: rgb(202, 10, 10);
+    font-family: 'Times New Roman', Times, serif;  
+    text-align: center;   
+}
+
+h4
+{
+    font-size: 50px;
+    color: rgb(48, 2, 2);
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center;   
+}
+
+h5
+{
+    background-color: rgb(185, 186, 187);
+    font-size: 10px;
+    color: rgb(0, 3, 3);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;  
+}
+
+h6
+{
+    font-size: 30px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;  
+    text-align: center;   
+    background-color: white
+    padding: 1px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px 2px;  
+    
+}
+
+label
+{
+width: 50%;
+padding: 2px;
+border-radius: 4px;
+resize: vertical;
+padding: 5px 5px 5px 5px;
+display: inline-block;
+}
+
+button
+{
+    background-color:rgb(100, 100, 238)
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    
+}
