@@ -1,76 +1,276 @@
-h1
-{
-background-color: rgb(185, 186, 187);
-font-size: 30px;
-color: rgb(0, 3, 3);
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-text-align: justify;
+body{
+	background-image: url("bg (3).png");
+	background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+	  min-height:100vh;
+	  font-family: 'Noto Sans', sans-serif;
 }
 
-table,td,th
-{
-background-color:white;
-border: 2px solid;
-width: 100%;
-border-collapse: collapse;
-margin-left: 15%;
-margin-right: 15%;
-text-align: center;
-padding: 15px;
-width: 70%;
+.mySlides {display: none}
+
+
+/*styling nav bar*/
+.topnav {
+  background-color:black;
+  overflow: hidden;
+  opacity: 0.9;
 
 }
 
-h2
-{
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color:white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:white;
+  color: black;
+}
+  
+
+
+/*styling table*/
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+  background-color: rgba(0, 0, 0, 0.89);
+	border-radius:3px;
+	padding:70px 100px;
+  width: 50%;
+  height: 50%;
+  opacity: 0.9;
+ 
+}
+
+.text-center{
+	color:white;	
+	text-transform:uppercase;
     font-size: 50px;
-    color: rgb(0, 3, 3);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    text-align: center;   
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
 }
 
-h3
-{
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:25px;
+	color:white;	
+ 
+	transition: all 0.5s ease-in-out;
+}
+
+.btn{
+	color:white;
+	background-color:#b91907;
+	outline: none;
+  border: 0;
+  color: white;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-left:600px;
+  margin-top: 0px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid rgb(165, 4, 4);  
+  background:transparent;
+  width:100%;
+  font-size:18px;
+  color:white;
+  
+}
+
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #ad1505;	
+}
+
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+
+
+/*styling the table*/
+table {
+  border-collapse: collapse;
+  width: 90%;
+  background-color: white;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-family:'Noto Sans', sans-serif;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+
+/*styling buttom bar*/
+.buttomnav {
+  background-color:black;
+  overflow: hidden;
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+  position: fixed;
+  z-index: 100; 
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  font-size: small;
+  
+}
+  
+
+/*styling about page*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  margin: 0px;
+  width: 200px;
+  opacity: .9;
+  position:absolute;
+  left: 0%;
+	top:30%;
+  
+}
+
+img{
+  width: 200px;
+}
+
+h2{
+  font-size: large;
+  color: white;
+  text-align: center;
+  
+}
+.title {
+  color:white;
+  text-align: center;
+  font-size: small;
+
+}
+
+
+/*styling box2*/
+.box2{
+	position:absolute;
+	left:50%;
+  right: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+  background-color: rgba(0, 0, 0, 0.89);
+	border-radius:3px;
+	padding:70px 100px;
+  width: 50%;
+  height: 50%;
+  opacity: 0.9;
+ 
+}
+
+.text-center2{
+	color:white;	
+	text-transform:uppercase;
     font-size: 50px;
-    color: rgb(202, 10, 10);
-    font-family: 'Times New Roman', Times, serif;  
-    text-align: center;   
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
 }
 
-h4
-{
-    font-size: 50px;
-    color: rgb(48, 2, 2);
-    font-family: 'Times New Roman', Times, serif; 
-    text-align: center;   
+.input-container2{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container2 label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:25px;
+	color:white;	
+	transition: all 0.5s ease-in-out;
 }
 
-h5
-{
-    background-color: rgb(185, 186, 187);
-    font-size: 10px;
-    color: rgb(0, 3, 3);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;  
+.btn2{
+	color:white;
+	background-color:#b91907;
+	outline: none;
+  border: 0;
+  color: white;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-left:600px;
+  margin-top: 0px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
 }
 
-h6
-{
-    font-size: 30px;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;  
-    text-align: center;   
-    background-color: white
-     
-    
+.input-container2 input{ 
+  border:0;
+  border-bottom:1px solid rgb(165, 4, 4);  
+  background:transparent;
+  width:100%;
+  font-size:18px;
+  color:white;
+  
 }
 
-label
-{
-width: 50%;
-padding: 2px;
-border-radius: 4px;
-resize: vertical;
-padding: 5px 5px 5px 5px;
-display: inline-block;
+.input-container2 input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #ad1505;	
 }
+
+
+.input-container2 input:focus ~ label,
+.input-container2 input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+
+
+ 
+
+
+
+
+
+
+
