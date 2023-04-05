@@ -19,6 +19,53 @@ let welcomingMessage = confirm ("Do you want to show welcoming message?");
 alert("hello "+title+" "+person+"  in our website!")
 
 
+///////////////////////////////////////////////
+function Questions (question)
+{
+   let answer = prompt(question);
+   return answer;
+}
+///////////////////////////////////////////////
+let answersArr =[];
+function putInArr (answer)
+{
+  answersArr.push(answer);
+  
+}
+///////////////////////////////////////////////
+function testAnswers (answers)
+{ let testArr =[]; 
+ for (let i=0;i<answers.length;i++)
+ {
+   if(answers[i]=="yes")
+   testArr.push("yes");
+
+   else if(answers[i]=="no")
+   testArr.push("no");
+
+   else
+   testArr.push("invalid");
+ }
+ return testArr;
+}
+///////////////////////////////////////////////
+let answer1=Questions ("Do you need help?[yes/no]");
+putInArr(answer1);
+let answer2=Questions ("Do you like our websit?[yes/no]");
+putInArr(answer2);
+let answer3=Questions ("is our websit usefull?[yes/no]");
+putInArr(answer3);
+console.log(testAnswers(answersArr));
+
+
+
+
+
+
+
+
+
+
 
 
      
