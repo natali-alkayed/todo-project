@@ -49,14 +49,22 @@ function testAnswers (answers)
  return testArr;
 }
 ///////////////////////////////////////////////
+function printArr(testedAnswers)
+{
+  console.log(testedAnswers);
+}
+///////////////////////////////////////////////
 let answer1=Questions ("Do you need help?[yes/no]");
 putInArr(answer1);
 let answer2=Questions ("Do you like our websit?[yes/no]");
 putInArr(answer2);
 let answer3=Questions ("is our websit usefull?[yes/no]");
 putInArr(answer3);
-console.log(testAnswers(answersArr));
 
+let testedAnswers=testAnswers(answersArr);
+printArr(testedAnswers);
+
+///////////////////////////////////////////////
 
 
 
