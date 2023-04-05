@@ -64,7 +64,7 @@ putInArr(answer3);
 let testedAnswers=testAnswers(answersArr);
 printArr(testedAnswers);
 
-
+///////////////////////////////////////////////
 
 
 
