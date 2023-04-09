@@ -1,4 +1,4 @@
-let person = prompt("Please enter your name:");
+/*let person = prompt("Please enter your name:");
 let gender = prompt("Please enter your gender:male or femal");
 if (gender !="male" && gender !="female")
 {let gender = prompt("Please enter your gender:male or femal");}
@@ -18,7 +18,7 @@ if(age<=0)
 let welcomingMessage = confirm ("Do you want to show welcoming message?");
 alert("hello "+title+" "+person+"  in our website!")
 
-
+*/
 ///////////////////////////////////////////////
 function Questions (question)
 {
@@ -28,30 +28,23 @@ function Questions (question)
 ///////////////////////////////////////////////
 let answersArr =[];
 function putInArr (answer)
-{
-  answersArr.push(answer);
-  
+{ 
+    if(answer=="yes")
+    answersArr.push("yes");
+ 
+    else if(answer=="no")
+    answersArr.push("no");
+ 
+    else
+    answersArr.push("invalid"); 
 }
 ///////////////////////////////////////////////
-function testAnswers (answers)
-{ let testArr =[]; 
- for (let i=0;i<answers.length;i++)
- {
-   if(answers[i]=="yes")
-   testArr.push("yes");
-
-   else if(answers[i]=="no")
-   testArr.push("no");
-
-   else
-   testArr.push("invalid");
- }
- return testArr;
-}
-///////////////////////////////////////////////
-function printArr(testedAnswers)
+function printArr(answersArr)
 {
-  console.log(testedAnswers);
+  for (let i=0;i<answersArr.length;i++)
+  {
+   console.log(answersArr[i]);
+  }
 }
 ///////////////////////////////////////////////
 let answer1=Questions ("Do you need help?[yes/no]");
@@ -61,9 +54,7 @@ putInArr(answer2);
 let answer3=Questions ("is our websit usefull?[yes/no]");
 putInArr(answer3);
 
-let testedAnswers=testAnswers(answersArr);
-printArr(testedAnswers);
-
+printArr(answersArr);
 ///////////////////////////////////////////////
 
 
